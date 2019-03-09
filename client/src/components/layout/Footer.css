@@ -1,0 +1,18 @@
+@media (max-width: 750px) {
+  .footer {
+    display: none;
+  }
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer li {
+  margin: 0 20px;
+}
+
+.color-black {
+  background: #1da1f2;
+}

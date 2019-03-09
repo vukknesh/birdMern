@@ -1,0 +1,221 @@
+.container-login {
+  /* background: linear-gradient(to right, #1da1f2, white); */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.signin-right {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+}
+.signin-right input {
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  margin: 0;
+  border: 1px solid #e6ecf0;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: start;
+}
+.subcontainer1 {
+  background: #1da1f2;
+  color: white;
+  width: 50%;
+  /* border: 5px solid black; */
+}
+.subb1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 10px solid green; */
+  min-width: 150px;
+}
+.subb1 li {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.subb1 i {
+  margin-right: 25px;
+}
+.subb1 .user {
+  margin-right: 15px;
+}
+
+.subcontainer2 {
+  width: 50%;
+  /* border: 5px solid black; */
+}
+.subsub2 {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  /* border: 3px solid blue; */
+  height: 50vh;
+  width: 55%;
+}
+
+.logo-log {
+  /* border: 3px solid black; */
+  position: relative;
+  margin: 0;
+  padding: 20px;
+}
+
+.logo-log a {
+  border-radius: 50px;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+  float: right;
+  top: 25%;
+  padding: 10px;
+  bottom: 25%;
+  position: relative;
+  font-weight: bold;
+}
+.bird {
+  color: #1da1f2;
+  font-size: 35px;
+}
+
+.logo-log a:hover {
+  background: #1da1f2;
+  color: white;
+}
+.left {
+  float: left;
+}
+
+.slogan {
+  /* border: 1px solid blueviolet; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-content: center;
+}
+.mini-slogan {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.join-btns {
+  display: flex;
+  flex-direction: column;
+}
+.join-btns p {
+  width: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  border-radius: 100px;
+
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+.join-btns .signin {
+  background: #1da1f2;
+  color: white;
+  border: transparent;
+}
+.join-btns .signin:hover {
+  background: #1581c4;
+}
+.join-btns .register {
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}
+.enter {
+  border-radius: 100px;
+  background: #1da1f2;
+  text-align: center;
+  color: white;
+  padding: 4px;
+  display: block;
+  width: 100%;
+}
+.enter:hover {
+  cursor: pointer;
+  background: #1581c4;
+}
+
+.join-btns .register:hover {
+  background: #ccd5e0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  background: #1da1f2;
+  color: white;
+  min-height: 70px;
+}
+.header-container img {
+  position: fixed;
+  left: 1px;
+  border-radius: 40%;
+  width: 60px;
+  height: 60px;
+  top: 2px;
+}
+.my-facebook-button-class {
+  text-align: center;
+  border-radius: 100px;
+  padding: 10px;
+  width: 100%;
+  background: #1da1f2;
+  color: white;
+  font-weight: bold;
+}
+.my-facebook-button-class:hover {
+  background: blue;
+}
+
+@media (max-width: 750px) {
+  .signin-right {
+    display: none;
+  }
+  .container-login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .subcontainer2 {
+    width: 100%;
+    min-height: 100%;
+
+    order: 1;
+  }
+  .subcontainer1 {
+    width: 100%;
+    height: 100%;
+
+    order: 2;
+  }
+}
+@media (max-height: 500px) {
+  .subcontainer2 .subsub2 {
+    top: 10%;
+  }
+  .container-login {
+    height: 100%;
+    overflow: hidden;
+  }
+  .subcontainer1 {
+    display: none;
+  }
+}
