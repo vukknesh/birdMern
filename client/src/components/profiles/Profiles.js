@@ -50,7 +50,7 @@ class Profiles extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4 text-center">Guides profiles</h1>
+              <h1 className="display-4 text-center">Search for Guides</h1>
               <p className="lead text-center">
                 Browse and connect Guides with Watchers
               </p>

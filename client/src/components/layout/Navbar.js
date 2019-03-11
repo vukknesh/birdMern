@@ -16,22 +16,22 @@ class Navbar extends Component {
     const { isAuthenticated, user } = this.props.auth;
 
     const authLinks = (
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto ">
         <li className="nav-item">
-          <Link className="nav-link" to="/feed">
+          <Link className="nav-link text-light" to="/feed">
             PostFeed
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/dashboard">
+          <Link className="nav-link text-light" to="/dashboard">
             Dashboard
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item ">
           <a
             href="#"
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
+            className="nav-link text-light"
           >
             <img
               src={user.avatar}
@@ -40,7 +40,7 @@ class Navbar extends Component {
               style={{ width: "25px", marginRight: "5px" }}
               className="rounded-circle"
             />
-            LOGOUT AS {user.name}
+            LOGOUT
           </a>
         </li>
       </ul>
@@ -61,10 +61,10 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm bg-primary border border-bottom-2 border-ligth">
+      <nav className="navbar navbar-expand-sm bg-primary border border-bottom-2 border-ligth ">
         <div className="container">
           <Link className="navbar-brand text-light" to="/">
-            BirdWatcher.com
+            Bird-Watcher.com
           </Link>
           <button
             className="navbar-toggler"
