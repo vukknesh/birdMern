@@ -51,5 +51,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function activatePlacesSearch() {
+        let input = document.getElementById("auto-complete");
+        let autocomplete = new google.maps.places.Autocomplete(input);
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAImznlpVIDBVGBz2An66ahcvp_yrKwTu4&libraries=places"
+    ></script>
   </body>
 </html>

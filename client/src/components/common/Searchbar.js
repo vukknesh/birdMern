@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 
+import GooglePlacesAutocomplete from "react-google-places-autocomplete";
+//AIzaSyAImznlpVIDBVGBz2An66ahcvp_yrKwTu4
+
 class Searchbar extends Component {
   render() {
     return (
       <div className="input-group mb-3">
         <input
+          id="auto-complete"
           type="text"
           name="name"
           className="form-control"
@@ -20,6 +24,15 @@ class Searchbar extends Component {
             Find
           </button>
         </div>
+        <GooglePlacesAutocomplete onSelect={console.log} />
+        {/* <Autocomplete
+          style={{ width: "90%" }}
+          onPlaceSelected={place => {
+            console.log(place);
+          }}
+          types={["(regions)"]}
+          componentRestrictions={{ country: "ru" }}
+        /> */}
       </div>
     );
   }
