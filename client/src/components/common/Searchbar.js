@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
-//AIzaSyAImznlpVIDBVGBz2An66ahcvp_yrKwTu4
 
 class Searchbar extends Component {
   render() {
@@ -25,14 +24,6 @@ class Searchbar extends Component {
           </button>
         </div>
         <GooglePlacesAutocomplete onSelect={console.log} />
-        {/* <Autocomplete
-          style={{ width: "90%" }}
-          onPlaceSelected={place => {
-            console.log(place);
-          }}
-          types={["(regions)"]}
-          componentRestrictions={{ country: "ru" }}
-        /> */}
       </div>
     );
   }

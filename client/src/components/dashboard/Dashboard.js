@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import ProfileActions from "./ProfileActions";
 import Experience from "./Experience";
 import Education from "./Education";
+import MapContainer from "./MapContainer";
 
 class Dashboard extends Component {
   componentDidMount() {
@@ -33,6 +34,7 @@ class Dashboard extends Component {
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
             <div style={{ marginBottom: "60px" }} />
+            <MapContainer />
             <button
               onClick={this.onDeleteClick.bind(this)}
               className="btn btn-danger"
