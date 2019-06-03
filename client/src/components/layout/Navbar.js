@@ -61,7 +61,7 @@ class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-sm bg-primary border border-bottom-2 border-ligth ">
+      <nav className="navbar navbar-dark navbar-expand-sm bg-primary border border-bottom-2 border-ligth ">
         <div className="container">
           <Link className="navbar-brand text-light" to="/">
             Bird-Watcher.com
@@ -79,7 +79,6 @@ class Navbar extends Component {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <Link className="nav-link text-light" to="/profiles">
-                  {" "}
                   Guides
                 </Link>
               </li>
